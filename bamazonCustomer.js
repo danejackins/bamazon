@@ -44,7 +44,6 @@ function runScript() {
     // After the prompt, store the user's response in a variable called "wish"
     ]).then(function(wish) {
       getProductByID(wish.itemId, function(item) {
-        //console.log(item);
         inquirer.prompt([
           {
             type: "input",
@@ -69,9 +68,7 @@ function runScript() {
         });
       })
     });
-    // Capturing userinput
   });
-
 };
 
 function getProductByID(id, callback) {
@@ -84,7 +81,6 @@ function purchaseProducts(itemId, quantity, callback) {
   var query = `UPDATE products SET stock_quantity = stock_quantity - ${quantity} WHERE item_id = ${itemId}`;
   console.log('query', query);
   connection.query(query, function(error, results) {
-    //console.log('results', results);
     callback('Success');
   })
 }
