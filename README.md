@@ -4,3 +4,5 @@ Welcome to the bamazon marketplace! In this app you will be able to search the b
 
 Thanks for using the bamazon marketplace and happy shopping!
 
+Video:
+https://youtu.be/6pw8jOgqjO0
